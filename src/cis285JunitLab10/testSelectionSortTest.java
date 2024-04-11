@@ -72,7 +72,12 @@ public class testSelectionSortTest {
         Sortedarr[3] = -7;
         Sortedarr[4] = -2;
 
-
+        int[] outputs = new int[5];
+        outputs = test.basicSelectionSort(arr);
+        System.out.println(Arrays.toString(outputs));
+        System.out.println(Arrays.toString(Sortedarr));
+        
+        assertEquals(Arrays.toString(outputs), Arrays.toString(Sortedarr));
     }
 
 	
